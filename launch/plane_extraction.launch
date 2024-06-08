@@ -1,0 +1,13 @@
+<launch>
+  <!-- <arg name="config_path" default="$(find wall_ground_plane_extractor_from_pointcloud)/config/plane_extraction_parameters/model_crane.yaml"/> -->
+  <arg name="config_path" default="$(find wall_ground_plane_extractor_from_pointcloud)/config/plane_extraction_parameters/kobelcko_2023.yaml"/>
+  <!-- <arg name="config_path" default="$(find wall_ground_plane_extractor_from_pointcloud)/config/plane_extraction_parameters/kobelcko.yaml"/> -->
+  <!-- <arg name="config_path" default="$(find wall_ground_plane_extractor_from_pointcloud)/config/plane_extraction_parameters/gazebo_simple_wall_env.yaml"/> -->
+
+
+  <!-- Load the parameters from the YAML file -->
+  <rosparam command="load" file="$(arg config_path)"/>
+
+  <!-- Launch the node with the loaded parameters -->
+  <node pkg="wall_ground_plane_extractor_from_pointcloud" type="plane_extraction" name="plane_extraction" output="screen"/>
+</launch>

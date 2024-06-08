@@ -1,0 +1,28 @@
+# Parameters for the model_crane environment
+
+# Add the file_directory of input poitcloud folder 
+# file_directory: /media/aisl2/aisl_data/catkin_ws/src/latest_crane/wall_ground_plane_extractor_from_pointcloud/input_pointcloud_data/kobelco_2023/
+file_directory: /media/aisl2/aisl_data/catkin_ws/src/latest_crane/wall_ground_plane_extractor_from_pointcloud/input_pointcloud_data/build_5_varying_boom_Angle_during_cycle/
+
+do_downsampling: False
+downsampling_leaf_size: 0
+pcd_file_name: capture00001.pcd
+
+# Parameters for ground_plane
+ground_angle_degree: 1.0
+ground_distance_threshold: 0.5
+min_ground_plane_size: 13224
+ground_plane_cluster_Tolerance: 0.3  # Adjust this value based on the density of your point cloud
+ground_plane_cluster_extraction: True 
+
+
+# Parameters for wall_plane
+wall_distance_threshold: 0.5
+wall_angle_degree: 20.0
+min_wall_plane_size: 3215
+wall_plane_cluster_Tolerance: 1.5
+
+# Euclidean Cluster Extraction parameters
+min_wall_segment_cluster_size: 563  # Minimum number of points that a cluster should have
+max_wall_segment_cluster_size: 2500   # Maximum number of points that a cluster should have
+wall_segment_cluster_Tolerance: 1.5    # Tolerance or maximum distance allowed between points in the same cluster during the Euclidean clustering process.

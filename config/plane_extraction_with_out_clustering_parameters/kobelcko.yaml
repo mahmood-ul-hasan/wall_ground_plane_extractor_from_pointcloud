@@ -1,0 +1,18 @@
+# Parameters for the model_crane environment
+
+# Add the file_directory of input poitcloud folder 
+file_directory: /home/aisl2/catkin_ws/src/latest_crane/map_optimization/input_pointcloud_data/kobelcko_exp_environment/
+
+
+# Parameters for ground_plane
+ground_angle_degree: 10.0
+ground_distance_threshold: 0.3
+min_ground_plane_size: 17000
+ground_plane_cluster_Tolerance: 0.5  # Adjust this value based on the density of your point cloud
+
+# Parameters for wall_plane
+wall_distance_threshold: 0.2
+wall_angle_degree: 0.1
+min_wall_plane_size: 5030
+
+ground_plane_cluster_extraction: false

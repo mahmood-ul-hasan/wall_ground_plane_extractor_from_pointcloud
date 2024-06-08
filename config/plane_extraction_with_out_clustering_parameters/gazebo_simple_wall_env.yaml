@@ -1,0 +1,19 @@
+# Parameters for the model_crane environment
+
+# Add the file_directory of input poitcloud folder 
+file_directory:  /media/aisl2/aisl_data/catkin_ws/src/latest_crane/map_optimization/input_pointcloud_data/gazebo_simple_wall_env/
+
+
+# Parameters for ground_plane
+ground_angle_degree: 2.0
+ground_distance_threshold: 1
+min_ground_plane_size: 2737000
+ground_plane_cluster_Tolerance: 1.5  # Adjust this value based on the density of your point cloud
+ground_plane_cluster_extraction: false
+
+# Parameters for wall_plane
+wall_distance_threshold: 0.37
+wall_angle_degree: 2.0
+min_wall_plane_size: 68830
+
+

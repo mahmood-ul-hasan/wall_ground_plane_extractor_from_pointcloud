@@ -1,0 +1,77 @@
+# Parameters for the model_crane environment
+
+# Add the file_directory of input poitcloud folder 
+file_directory: /media/aisl2/aisl_data/catkin_ws/src/latest_crane/wall_ground_plane_extractor_from_pointcloud/input_pointcloud_data/build_5_varying_boom_Angle_during_cycle_capture_00003/
+pcd_file_name: capture00003.pcd
+number_of_Wall_plans: 4
+min_point_ground1:
+  x: -10000
+  y: -10000
+  z: -35
+max_point_ground1:
+  x: 10000
+  y: 10000
+  z: -18
+
+# wall 1
+min_point_wall1:
+  x: -40
+  y: 31
+  z: -100000
+max_point_wall1:
+  x: 60
+  y: 42.5    # cap1-2: 41.5
+  z: 1000000
+
+# wall 2
+min_point_wall2:
+  x: -50
+  y: 100
+  z: -10000000
+max_point_wall2:
+  x: 10000000
+  y: 300
+  z: 10000000
+
+# wall 3
+min_point_wall3:
+  x: -70
+  y: -1   # -20 cap1
+  z: -10000000
+max_point_wall3:
+  x: -63   # cap1 -52
+  y: 60
+  z: 10000000
+
+# wall 4
+# min_point_wall4:
+#   x: -35
+#   y: 19.5
+#   z: -10000000
+# max_point_wall4:
+#   x: 2
+#   y: 25
+#   z: 1000000
+
+min_point_wall4:
+  x: 20
+  y: 29
+  z: -100000
+max_point_wall4:
+  x: 125
+  y: 42.5    # cap1-2: 41.5
+  z: 1000000
+
+
+# Parameters for ground_plane
+ground_angle_degree: 10.0
+ground_distance_threshold: .5
+min_ground_plane_size: 8477
+ground_plane_cluster_Tolerance: 1.5  # Adjust this value based on the density of your point cloud
+
+# Parameters for wall_plane
+wall_distance_threshold: 4.5
+wall_angle_degree: 120
+min_wall_plane_size: 2432
+
+ground_plane_cluster_extraction: false

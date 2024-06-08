@@ -1,0 +1,16 @@
+<launch>
+  <!-- <arg name="config_path" default="$(find map_optimization)/config/plane_extraction_with_out_clustering_parameters/model_crane.yaml"/> -->
+  <!-- <arg name="config_path" default="$(find map_optimization)/config/plane_extraction_with_out_clustering_parameters/kobelcko_2023.yaml"/> -->
+  <!-- <arg name="config_path" default="$(find map_optimization)/config/plane_extraction_with_out_clustering_parameters/gazebo_simple_wall_env.yaml"/> -->
+  <!-- <arg name="config_path" default="$(find map_optimization)/config/plane_extraction_with_out_clustering_parameters/gazebo_construction_env.yaml"/> -->
+
+  <!-- <arg name="config_path" default="$(find map_optimization)/config/plane_extraction_with_out_clustering_parameters/gazebo_simple_wall_env1.yaml"/> -->
+  <arg name="config_path" default="$(find map_optimization)/config/plane_extraction_parameters/gazebo_simple_wall_env_noised_one_wall.yaml"/>
+
+
+  <!-- Load the parameters from the YAML file -->
+  <rosparam command="load" file="$(arg config_path)"/>
+
+  <!-- Launch the node with the loaded parameters -->
+  <node pkg="map_optimization" type="plane_extraction_with_out_clustering" name="plane_extraction_with_out_clustering" output="screen"/>
+</launch>

@@ -1,0 +1,58 @@
+# Parameters for the model_crane environment
+
+# Add the file_directory of input poitcloud folder 
+file_directory:  /media/aisl2/aisl_data/catkin_ws/src/latest_crane/wall_ground_plane_extractor_from_pointcloud/input_pointcloud_data/input_pointcloud_data/gazebo_simple_wall_env/
+
+# =========================================
+#
+# Parameters if downsampling is performed
+#
+# =========================================
+do_downsampling: True
+downsampling_leaf_size: 2
+
+# Parameters for ground_plane
+ground_angle_degree: 2.0
+ground_distance_threshold: 0.5
+min_ground_plane_size: 10262
+ground_plane_cluster_Tolerance: 1.5  # Adjust this value based on the density of your point cloud
+ground_plane_cluster_extraction: True 
+
+# Parameters for wall_plane
+wall_distance_threshold: 1.4
+wall_angle_degree: 40.0
+min_wall_plane_size: 235
+wall_plane_cluster_Tolerance: 2 # use large value if you donot want to do clustering on the  extracted wall plan
+
+# Euclidean Cluster Extraction parameters
+min_wall_segment_cluster_size: 273     # Minimum number of points that a cluster should have
+max_wall_segment_cluster_size: 2500000    # Maximum number of points that a cluster should have
+wall_segment_cluster_Tolerance: 15   # Tolerance or maximum distance allowed between points in the same cluster during the Euclidean clustering process.
+
+
+
+# =========================================
+#
+# Parameters if downsampling is not performed
+#
+# =========================================
+# do_downsampling: False
+# downsampling_leaf_size: 2
+
+# Parameters for ground_plane
+# ground_angle_degree: 2.0
+# ground_distance_threshold: 0.5
+# min_ground_plane_size: 10262
+# ground_plane_cluster_Tolerance: 1.5  # Adjust this value based on the density of your point cloud
+# ground_plane_cluster_extraction: True 
+
+# # Parameters for wall_plane
+# wall_distance_threshold: 1.4
+# wall_angle_degree: 40.0
+# min_wall_plane_size: 2000
+# wall_plane_cluster_Tolerance: 2 # use large value if you donot want to do clustering on the  extracted wall plan
+
+# # Euclidean Cluster Extraction parameters
+# min_wall_segment_cluster_size: 100     # Minimum number of points that a cluster should have
+# max_wall_segment_cluster_size: 2500000    # Maximum number of points that a cluster should have
+# wall_segment_cluster_Tolerance: 5   # Tolerance or maximum distance allowed between points in the same cluster during the Euclidean clustering process.

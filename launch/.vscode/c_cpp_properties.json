@@ -1,0 +1,53 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/aisl/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/aisl/catkin_ws/src/vins/imu_calibration/allan_variance_ros/include/**",
+        "/home/aisl/catkin_ws/src/vins/vins_mono/camera_model/include/**",
+        "/home/aisl/catkin_ws/src/vins/VINS_Fusion-simulation/camera_models/include/**",
+        "/home/aisl/catkin_ws/src/code_utils/code_utils-master/include/**",
+        "/home/aisl/catkin_ws/src/graph_slam/fast_gicp/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/ptu_d47/flir_ptu_driver/include/**",
+        "/home/aisl/catkin_ws/src/graph_slam_visualizer/include/**",
+        "/home/aisl/catkin_ws/src/graph_slam/hdl_graph_slam/include/**",
+        "/home/aisl/catkin_ws/src/graph_slam/interactive_slam/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/laser_filters-noetic-devel/include/**",
+        "/home/aisl/catkin_ws/src/vins/vloam/src/lidar_odometry_mapping/include/**",
+        "/home/aisl/catkin_ws/src/loam/loam_velodyne/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/map_optimization/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/lidar_simulation_environment/model_msg_to_rotbase_joint_msg/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/lidar_simulation_environment/move_lidar_sensor_model/include/**",
+        "/home/aisl/catkin_ws/src/graph_slam/ndt_omp/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/orion_rotating_base/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/lidar_simulation_environment/pedestrian_in_simulator/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/pluginlib_tutorials_/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/serial/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/lidar_simulation_environment/shake_crane_load/include/**",
+        "/home/aisl/catkin_ws/src/geometry2/tf2/include/**",
+        "/home/aisl/catkin_ws/src/geometry2/tf2_bullet/include/**",
+        "/home/aisl/catkin_ws/src/geometry2/tf2_eigen/include/**",
+        "/home/aisl/catkin_ws/src/geometry2/tf2_geometry_msgs/include/**",
+        "/home/aisl/catkin_ws/src/geometry2/tf2_kdl/include/**",
+        "/home/aisl/catkin_ws/src/geometry2/tf2_msgs/include/**",
+        "/home/aisl/catkin_ws/src/geometry2/tf2_ros/include/**",
+        "/home/aisl/catkin_ws/src/geometry2/tf2_sensor_msgs/include/**",
+        "/home/aisl/catkin_ws/src/turtlebot/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/aisl/catkin_ws/src/turtlebot/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/aisl/catkin_ws/src/turtlebot/turtlebot3/turtlebot3_slam/include/**",
+        "/home/aisl/catkin_ws/src/latest_crane/urg_node/include/**",
+        "/home/aisl/catkin_ws/src/vins/usb_cam-develop/include/**",
+        "/home/aisl/catkin_ws/src/vins/vloam/src/visual_odometry/include/**",
+        "/home/aisl/catkin_ws/src/vins/vloam/src/vloam_tf/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
