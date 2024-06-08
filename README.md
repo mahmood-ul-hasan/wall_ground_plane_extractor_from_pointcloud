@@ -2,6 +2,7 @@
 
 This repository provides three different methods to extract planes (wall and ground) from point clouds using ROS and PCL (Point Cloud Library). Each method has its own launch file and configuration file where various parameters can be set and modified according to your requirements.
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OlUP4XwVgqc/0.jpg)](https://www.youtube.com/watch?v=OlUP4XwVgqc)
 
 ## Method Overviews
 
