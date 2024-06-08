@@ -22,6 +22,7 @@ wall_ground_plane_extractor_from_pointcloud/
 ├── CMakeLists.txt
 ├── package.xml
 └── README.md
+```
 
 ## Getting Started
 # Prerequisites
